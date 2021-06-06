@@ -3,6 +3,10 @@
     margin: 25px 90px;
 }
 
+.wrapper {
+    margin-bottom: 63px;
+}
+
 .card {
     margin-right: 30px;
     color: black;

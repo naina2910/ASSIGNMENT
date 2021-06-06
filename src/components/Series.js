@@ -34,7 +34,7 @@ export default class Series extends Component{
             this.setState({data:response.entries})
         })
         .finally(()=> this.setState({isLoading:false}))
-        .catch(error =>this.setState({error:"Error.."+error.message}));
+        .catch(error =>this.setState({error:"Oops,Something went wrong......."}));
     }
     render(){
         
@@ -47,20 +47,36 @@ export default class Series extends Component{
             if (x > y) {return 1;}
             return 0;
           })
-        
-        return(
-            <div>
-                <Title title={"Popular "+this.props.cardname}/>
+
+        if(this.state.isLoading){
+            return(
                 <div className="seriescontainer">
-                    {
-                        items.map((item)=>{
-                            return(
-                                <SeriesCard title={item.title} image={item.images.PosterArt}/>
-                            );
-                        })
-                    }
+                    <h1>Loading......</h1>
                 </div>
-            </div>
-        );
+            );
+        }
+        else if(this.state.error){
+            return(
+                <div className="seriescontainer">
+                    <h1>{this.state.error}</h1>
+                </div>
+            );
+        }  
+        else{
+            return(
+                <div>
+                    <Title title={"Popular "+this.props.cardname}/>
+                    <div className="seriescontainer">
+                        {
+                            items.map((item)=>{
+                                return(
+                                    <SeriesCard title={item.title} image={item.images.PosterArt}/>
+                                );
+                            })
+                        }
+                    </div>
+                </div>
+            );
+        }  
     }  
 }
