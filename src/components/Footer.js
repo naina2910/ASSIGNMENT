@@ -16,7 +16,7 @@ export default function Footer(){
                 </div>
                 <div className="right">
                     <img src="http://www.completewebdevelopercourse.com/content/5-bootstrap/App-Store-Icon.png"/>
-                    <img src="https://www.dbmena.com/tech/wp-content/uploads/2019/05/google_play_logo.png"/>
+                    <img className="google" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/640px-Google_Play_Store_badge_EN.svg.png"/>
                     <img src="https://developer.microsoft.com/en-us/store/badges/images/English_get-it-from-MS.png"/>
                 </div>
             </div>

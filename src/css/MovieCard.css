@@ -1,6 +1,11 @@
+.moviecard {
+    margin-bottom: 25px;
+}
+
 .moviecard p {
     text-align: center;
     width: 200px;
+    padding-top: 8px;
 }
 
 .moviecard .img {
