@@ -1,6 +1,7 @@
 import Title from "./Title";
 import React,{Component} from "react"
 import MovieCard from "./MovieCard";
+import "../css/movie.css"
 
 export default class Movies extends Component{
     constructor(){
@@ -37,14 +38,28 @@ export default class Movies extends Component{
     }
     render(){
         
-        const items=this.state.data.filter((item)=>{
+        var items=this.state.data.filter((item)=>{
            return item.releaseYear>=2010 && item.programType=="movie"
-        }).slice(0,21)
+        }).slice(0,21).sort(function(a, b){
+            var x = a.title.toLowerCase();
+            var y = b.title.toLowerCase();
+            if (x < y) {return -1;}
+            if (x > y) {return 1;}
+            return 0;
+          })
         
         return(
             <div>
                 <Title title="Popular Movies"/>
-                {console.log(items[0])}
+                <div className="moviecontainer">
+                    {
+                        items.map((item)=>{
+                            return(
+                                <MovieCard title={item.title} image={item.images.PosterArt}/>
+                            );
+                        })
+                    }
+                </div>
             </div>
         );
     }  

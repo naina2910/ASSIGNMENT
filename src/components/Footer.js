@@ -14,10 +14,11 @@ export default function Footer(){
                     <i className="fa fa-twitter" aria-hidden="true"></i>
                     <i className="fa fa-instagram" aria-hidden="true"></i>
                 </div>
-                {/* <div className="right">
-                    <img src="assets/googleplay.png" alt="" />
-                    <img src="assets/microsoft.png" alt="Download on Microsoft" />
-                </div> */}
+                <div className="right">
+                    <img src="http://www.completewebdevelopercourse.com/content/5-bootstrap/App-Store-Icon.png"/>
+                    <img src="https://www.dbmena.com/tech/wp-content/uploads/2019/05/google_play_logo.png"/>
+                    <img src="https://developer.microsoft.com/en-us/store/badges/images/English_get-it-from-MS.png"/>
+                </div>
             </div>
         </div>
     );

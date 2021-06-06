@@ -1,12 +1,15 @@
-.card {
-    margin-right: 30px;
+.moviecard p {
+    text-align: center;
+    width: 200px;
 }
 
-.img {
-    margin-bottom: 9px;
+.moviecard .img {
+    height: 250px;
+    width: 200px;
+    padding: 20px 0px;
 }
 
 img {
-    width: 100%;
     height: 100%;
+    width: 100%;
 }

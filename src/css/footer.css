@@ -13,8 +13,29 @@ p {
     margin-top: 27px;
 }
 
+.section2 .left {
+    float: left;
+    width: 50%;
+}
+
 .left i {
     font-size: 30px;
     padding-right: 20px;
     color: white;
+}
+
+.section2 .right {
+    float: right;
+    width: 50%;
+}
+
+.right img {
+    width: 22%;
+    margin: 0px 10px;
+}
+
+.section2::after {
+    content: "";
+    clear: both;
+    display: table;
 }
