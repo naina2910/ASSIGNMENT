@@ -1,7 +1,7 @@
 .seriescontainer {
-    padding: 20px 90px;
+    padding: 20px 60px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 }

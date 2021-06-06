@@ -1,6 +1,6 @@
 .footer {
     margin-top: 65px;
-    padding: 35px 90px;
+    padding: 35px 60px;
     background-color: black;
     color: grey;
 }
@@ -37,10 +37,36 @@ p {
 .section2::after {
     content: "";
     clear: both;
-    display: table;
+    display: block;
 }
 
 .right img.google {
     width: 25%;
     margin: 0px 10px;
+}
+
+@media screen and (max-width: 912px) {
+    .left i {
+        font-size: 25px;
+    }
+    .right img {
+        width: 25%;
+    }
+    .right img.google {
+        width: 28%;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .section2 .left {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .section2 .right {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 20px;
+    }
 }

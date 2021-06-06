@@ -1,7 +1,7 @@
 .header {
     height: 70px;
     background-color: blue;
-    padding: 0px 90px;
+    padding: 0px 60px;
     color: white;
     line-height: 70px;
 }
@@ -19,4 +19,14 @@ a {
 .button {
     padding: 15px;
     background-color: black;
+}
+
+@media screen and (max-width: 646px) {
+    body {
+        background-color: lightgreen;
+    }
+    .header {
+        height: 110px;
+        line-height: 50px;
+    }
 }
