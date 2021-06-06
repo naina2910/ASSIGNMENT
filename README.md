@@ -1,3 +1,17 @@
+# How did you decide on the technical and architectural choices used as part of your solution?
+
+For technical part I have choosen React. React is an open-source front-end JavaScript library for building user interfaces or UI components. Hence, it was one of the best option. It helped me to create my  web application that can change data, without reloading the page.
+As per architectural part project's src folder contains App.js, index.js,CSS files and all the components used. Public folder contains index.html and assests.
+I have used router and react dom in the project.
+
+# Are there any improvements you could make to your submission?
+
+I have made the website responsive. The website fetches the data from JSON file and show it in the pages.Currently I have saved the json file locally in the folder but I can make it more genral by connecting it with server and storing all the assests there.
+
+# What would you do differently if you were allocated more time?
+
+If I have had more time, I would have add respective pages of each movie and series that would give more information about that movie or series.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
