@@ -22,9 +22,6 @@ a {
 }
 
 @media screen and (max-width: 646px) {
-    body {
-        background-color: lightgreen;
-    }
     .header {
         height: 110px;
         line-height: 50px;

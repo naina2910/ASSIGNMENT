@@ -1,6 +1,9 @@
 .container {
     display: flex;
-    margin: 25px 90px;
+    margin: 25px 60px;
+    margin-bottom: 0px;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .wrapper {
@@ -10,13 +13,15 @@
 .card {
     margin-right: 30px;
     color: black;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .card .img {
     position: relative;
     width: 150px;
     height: 200px;
-    margin-bottom: 9px;
+    margin-bottom: 3px;
     text-align: center;
 }
 
@@ -42,4 +47,13 @@
 .card .img img {
     width: 100%;
     height: 100%;
+}
+
+@media screen and (max-width:540px) {
+    .container {
+        justify-content: center;
+    }
+    .card {
+        margin-right: 0px;
+    }
 }
