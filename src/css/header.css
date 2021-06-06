@@ -1,0 +1,22 @@
+.header {
+    height: 70px;
+    background-color: blue;
+    padding: 0px 90px;
+    color: white;
+    line-height: 70px;
+}
+
+.links {
+    float: right;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.button {
+    padding: 15px;
+    background-color: black;
+}
