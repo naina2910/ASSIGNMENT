@@ -1,11 +1,11 @@
 import Title from "./Title";
 import React,{Component} from "react"
-import MovieCard from "./MovieCard";
-import "../css/movie.css"
+import SeriesCard from "./SeriesCard";
+import "../css/series.css"
 
 export default class Series extends Component{
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state={
             data:[],
             error:null,
@@ -39,7 +39,7 @@ export default class Series extends Component{
     render(){
         
         var items=this.state.data.filter((item)=>{
-           return item.releaseYear>=2010 && item.programType=="series"
+           return item.releaseYear>=2010 && item.programType==this.props.cardname.toLowerCase();
         }).slice(0,21).sort(function(a, b){
             var x = a.title.toLowerCase();
             var y = b.title.toLowerCase();
@@ -50,12 +50,12 @@ export default class Series extends Component{
         
         return(
             <div>
-                <Title title="Popular Series"/>
-                <div className="moviecontainer">
+                <Title title={"Popular "+this.props.cardname}/>
+                <div className="seriescontainer">
                     {
                         items.map((item)=>{
                             return(
-                                <MovieCard title={item.title} image={item.images.PosterArt}/>
+                                <SeriesCard title={item.title} image={item.images.PosterArt}/>
                             );
                         })
                     }

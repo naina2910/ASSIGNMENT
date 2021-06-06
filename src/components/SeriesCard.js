@@ -1,8 +1,8 @@
-import "../css/MovieCard.css"
+import "../css/SeriesCard.css"
 
-export default function MovieCard(props){
+export default function SeriesCard(props){
     return(
-        <div className="moviecard">
+        <div className="seriescard">
             <div className="img">
                 <img src={props.image.url} alt="{props.title}"/>
             </div>

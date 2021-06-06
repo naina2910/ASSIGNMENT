@@ -2,7 +2,6 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/Home"
 import Series from "./components/Series"
-import Movies from "./components/Movies"
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import "./css/app.css"
 
@@ -13,8 +12,8 @@ function App() {
         <Header/>
         <Switch>
           <Route path="/" exact component={Home}/>
-          <Route path="/series" exact component={Series}/>
-          <Route path="/Movies" exact component={Movies}/>
+          <Route path="/series" exact component={()=><Series cardname="Series"/>}/>
+          <Route path="/movies" exact component={()=><Series cardname="Movie"/>}/>
         </Switch>
         <Footer/>
       </div>

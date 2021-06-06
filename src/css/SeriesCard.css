@@ -1,14 +1,14 @@
-.moviecard {
+.seriescard {
     margin-bottom: 25px;
 }
 
-.moviecard p {
+.seriescard p {
     text-align: center;
     width: 200px;
     padding-top: 8px;
 }
 
-.moviecard .img {
+.seriescard .img {
     height: 250px;
     width: 200px;
 }
